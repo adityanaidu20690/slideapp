@@ -62,7 +62,7 @@ stage('maven') {
         stage('Docker Build'){
           steps{
 	sh '''docker build -t slidergame .
-docker tag demo adityanaidu20690/slidergame:latest
+docker tag slidergame adityanaidu20690/slidergame:latest
 '''
 	}
     }
